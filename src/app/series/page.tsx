@@ -6,14 +6,7 @@ export default function SeriesPage() {
 
         <main className="flex-grow">
 
-            {/*Header temporario, excluir depois*/}
-            <header className="bg-white p-6">
-                <div className="flex justify-between">
-                    <h1 className="text-2xl text-black font-bold">Byron.TV</h1>
-                </div>
-            </header>
-
-
+            
             <div className="flex flex-col gap-20">
 
                 {/* Seção Hero da pagina series*/}
