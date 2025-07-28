@@ -53,10 +53,6 @@ export default function SeriesPage() {
 
                 </div>
 
-                {/*Footer temporario, ira ser apagado em breve depois*/}
-                <footer className="flex bg-white text-2xl text-black font-bold py-12">
-                    <p>oie</p>
-                </footer>
 
             </div>
 

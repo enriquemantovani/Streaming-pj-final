@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import HeaderSeries from "@/components/HeaderSeries";
+import Footer from "@/components/Footer";
 import "@/app/globals.css";
 
 
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <HeaderSeries/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

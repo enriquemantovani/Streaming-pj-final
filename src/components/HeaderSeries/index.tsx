@@ -4,30 +4,25 @@ export default function HeaderSeries(){
 
     return(
 
-        <header className="flex justify-between bg-blue-800 p-4">
-            <div>
-                <h1 className="font-extrabold text-4xl text-cyan-500">Byron.TV</h1>
-            </div>
-            <div className="flex gap-4 text-2xl font-bold text-white">
-                <Link href="/">
-                    Início
-                </Link>
+        <header className="bg-blue-900/90 backdrop-blur px-6 py-4 flex items-center justify-between shadow-lg sticky top-0 z-50">
+            <h1 className="text-3xl font-extrabold text-cyan-400 tracking-wide">Byron.tv</h1>
+            <nav className="hidden md:flex gap-6 text-base font-medium">
+                <Link href="/" className="hover:text-cyan-300 transition">Início</Link>
+                <Link href="/series" className="hover:text-cyan-300 transition">Séries</Link>
+                <Link href="/" className="hover:text-cyan-300 transition">Filmes</Link>
+                <Link href="/" className="hover:text-cyan-300 transition">Minha Lista</Link>
+            </nav>
+            <div className="flex items-center gap-4">
+                
+                <button className="text-xl hover:text-cyan-300 transition">🔍</button>
+                <button className="text-xl hover:text-cyan-300 transition">🔔</button>
+            
 
-                <Link href="/series">
-                    Séries
-                </Link>
-
-                <Link href="/">
-                    Gêneros
-                </Link>
-
-                <Link href="/">
-                    Minha Lista
-                </Link>
+                <div className="w-8 h-8 bg-cyan-400 text-blue-900 flex items-center justify-center rounded-full ring-2 ring-white ring-opacity-30 text-sm font-bold">
+                    👤
+                </div>
             </div>
-            <div>
-                <h3 className="text-black text-3xl">Icones custom</h3>
-            </div>
+
         </header>
 
 
