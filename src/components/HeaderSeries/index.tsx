@@ -9,11 +9,11 @@ export default function HeaderSeries(){
             <nav className="hidden md:flex gap-6 text-base font-medium">
                 <Link href="/" className="hover:text-cyan-300 transition">Início</Link>
                 <Link href="/series" className="hover:text-cyan-300 transition">Séries</Link>
-                <Link href="/" className="hover:text-cyan-300 transition">Filmes</Link>
+                <Link href="/generos" className="hover:text-cyan-300 transition">Gêneros</Link>
                 <Link href="/" className="hover:text-cyan-300 transition">Minha Lista</Link>
             </nav>
             <div className="flex items-center gap-4">
-                
+
                 <button className="text-xl hover:text-cyan-300 transition">🔍</button>
                 <button className="text-xl hover:text-cyan-300 transition">🔔</button>
             
