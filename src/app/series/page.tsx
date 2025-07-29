@@ -44,7 +44,7 @@ export default function SeriesPage() {
                             </div>
                         </div>
                         
-                        <div className="bg-white w-full py-24">
+                        <div className="bg-white w-full py-24 border-2 border-black">
                             <p>a</p>
                         </div>
                     </div>

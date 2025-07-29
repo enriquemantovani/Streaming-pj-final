@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function HeaderSeries(){
+export default function Header(){
 
     return(
 
