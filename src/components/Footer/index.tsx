@@ -35,7 +35,6 @@ export default function Footer() {
             <p className="text-center text-blue-400">&copy; byron solutions Todos os direitos reservados.</p>
         </footer>        
 
-
     )
 
 
