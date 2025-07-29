@@ -13,19 +13,11 @@ export default function Header(){
                 <Link href="/" className="hover:text-cyan-300 transition">Minha Lista</Link>
             </nav>
             <div className="flex items-center gap-4">
-
                 <button className="text-xl hover:text-cyan-300 transition">🔍</button>
                 <button className="text-xl hover:text-cyan-300 transition">🔔</button>
-            
-
                 <div className="w-8 h-8 bg-cyan-400 text-blue-900 flex items-center justify-center rounded-full ring-2 ring-white ring-opacity-30 text-sm font-bold">
                     👤
                 </div>
             </div>
-
-        </header>
-
-
     )
-
 }
