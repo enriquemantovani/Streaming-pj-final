@@ -1,3 +1,4 @@
+import { AlignJustify } from "lucide-react"
 import Link from "next/link"
 
 export default function GenerosPage(){
@@ -32,7 +33,7 @@ export default function GenerosPage(){
                         </div>
 
                         <div className="flex justify-center items-center bg-gray-400 border-t-2 border-r-2 border-b-2 border-black w-8">
-                            <p className="text-3xl">‖</p>
+                            <p className="text-3xl"><AlignJustify/></p>
                         </div>
 
                     </div>

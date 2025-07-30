@@ -1,3 +1,4 @@
+import { Search } from "lucide-react";
 import Link from "next/link";
 
 export default function SeriesPage() {
@@ -39,7 +40,7 @@ export default function SeriesPage() {
                                 <input className="bg-white border-2 border-black" type="text" placeholder="Pesquisar..." />
 
                                 <button className="text-xl">
-                                    🔍
+                                    <Search/>
                                 </button>
                             </div>
                         </div>
