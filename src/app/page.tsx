@@ -1,103 +1,68 @@
-import Image from "next/image";
-
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+  return(
+
+    
+    <main className="bg-blue-600">
+
+      {/*Hero*/}
+      <section className="text-center px-4 py-16 bg-gradient-to-r from-blue-700 via-blue-900 to-blue-700">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-snug">
+          Assista todos os seus favoritos com a <span className="text-cyan-400">Byron.tv</span>!
+        </h2>
+        <p className="text-blue-300 max-w-xl mx-auto mt-2 text-lg">Explore séries, filmes e muito mais, tudo em um só lugar.</p>
+      </section>
+
+      {/*Cards*/}
+      <section className="flex flex-col md:flex-row justify-center gap-8 px-6 py-12">
+        <div className="bg-blue-800 hover:bg-blue-700 p-6 rounded-lg w-full md:w-1/3 transition shadow-xl">
+          <h3 className="text-2xl font-semibold mb-3 text-cyan-300">Séries</h3>
+          <p className="text-blue-200 mb-4">Veja lançamentos, tops da semana e séries em destaque.</p>
+          <ul className="text-blue-100 text-sm list-disc list-inside space-y-1">
+            <li>Stranger Things</li>
+            <li>Fate/Zero</li>
+            <li>Round 6</li>
+          </ul>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="bg-blue-800 hover:bg-blue-700 p-6 rounded-lg w-full md:w-1/3 transition shadow-xl">
+          <h3 className="text-2xl font-semibold mb-3 text-cyan-300">Gêneros</h3>
+          <p className="text-blue-200 mb-4">Explore por categorias como Ação, Romance, Comédia e mais.</p>
+          <div className="flex flex-wrap gap-2 text-sm">
+            <span className="bg-cyan-400 text-blue-900 px-3 py-1 rounded-full font-semibold">Ação</span>
+            <span className="bg-cyan-400 text-blue-900 px-3 py-1 rounded-full font-semibold">Romance</span>
+            <span className="bg-cyan-400 text-blue-900 px-3 py-1 rounded-full font-semibold">Comédia</span>
+            <span className="bg-cyan-400 text-blue-900 px-3 py-1 rounded-full font-semibold">Suspense</span>
+          </div>
+        </div>
+      </section>
+
+      {/*Destaques*/};
+      <section className="px-6 pb-16">
+        <h3 className="text-3xl font-bold mb-6 text-center text-cyan-300">Destaques para você</h3>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="rounded-xl bg-blue-800 hover:bg-blue-700 transition shadow-lg overflow-hidden">
+            <div className="h-32 bg-blue-700 flex items-center justify-center font-bold text-cyan-300 text-sm">The Monitor</div>
+            <p className="text-xs text-blue-200 p-3">Veja lançamentos, tops de semana e sucessos recentes.</p>
+          </div>
+          <div className="rounded-xl bg-blue-800 hover:bg-blue-700 transition shadow-lg overflow-hidden">
+            <div className="h-32 bg-blue-700 flex items-center justify-center font-bold text-cyan-300 text-sm">Dark City</div>
+            <p className="text-xs text-blue-200 p-3">Uma cidade onde tudo pode acontecer. Suspense e drama.</p>
+          </div>
+          <div className="rounded-xl bg-blue-800 hover:bg-blue-700 transition shadow-lg overflow-hidden">
+            <div className="h-32 bg-blue-700 flex items-center justify-center font-bold text-cyan-300 text-sm">Alien Conflict</div>
+            <p className="text-xs text-blue-200 p-3">Conflitos galácticos e decisões de vida ou morte.</p>
+          </div>
+          <div className="rounded-xl bg-blue-800 hover:bg-blue-700 transition shadow-lg overflow-hidden">
+            <div className="h-32 bg-blue-700 flex items-center justify-center font-bold text-cyan-300 text-sm">Forlorn</div>
+            <p className="text-xs text-blue-200 p-3">Uma jornada solitária no coração da floresta escura.</p>
+          </div>
+          <div className="rounded-xl bg-blue-800 hover:bg-blue-700 transition shadow-lg overflow-hidden">
+            <div className="h-32 bg-blue-700 flex items-center justify-center font-bold text-cyan-300 text-sm">The Long Way</div>
+            <p className="text-xs text-blue-200 p-3">Uma viagem intensa cheia de reviravoltas emocionantes.</p>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
