@@ -28,8 +28,17 @@ export default function GenerosPage(){
                     </div>
 
                     <div className="flex w-full min-h-[300px]">
-                        <div className="bg-white w-4/5 md:w-7/10 border-2 border-black">
-                            <p>Lorem</p>
+                        <div className="bg-white w-4/5 md:w-7/10 border-2 border-black text-black text-2xl font-medium flex flex-col">
+
+                            {/*Exemplo de gêneros*/}
+                            <p>Ação</p>
+                            <p>Ficção</p>
+                            <p>Comédia</p>
+                            <p>Super Herói</p>
+                            <p>Suspense</p>
+                            <p>Terror</p>
+                            <p>Policial</p>
+                            <p>Dorama</p>
                         </div>
 
                         <div className="flex justify-center items-center bg-gray-400 border-t-2 border-r-2 border-b-2 border-black w-8">
