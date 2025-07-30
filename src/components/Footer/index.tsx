@@ -1,3 +1,5 @@
+import { Copyright } from "lucide-react";
+
 export default function Footer() {
 
     return(
@@ -32,7 +34,7 @@ export default function Footer() {
                 </ul>
             </div>
             </div>
-            <p className="text-center text-blue-400">&copy; byron solutions Todos os direitos reservados.</p>
+            <p className="flex justify-center text-center gap-2 text-blue-400"><span><Copyright size={16}/></span> byron solutions Todos os direitos reservados.</p>
         </footer>        
 
     )
