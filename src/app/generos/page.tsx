@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -108,46 +109,77 @@ export default function GenerosPage() {
                       >
                         Deletar
                       </button>
+=======
+import { AlignJustify } from "lucide-react"
+import Link from "next/link"
+
+export default function GenerosPage(){
+
+    return(
+
+
+        <main className="flex-grow">
+
+            <div className="flex flex-col items-center gap-20 bg-blue-500">
+
+                {/* Section da pagina generos */}
+
+                <section className="bg-gradient-to-r from-blue-700 via-blue-900 to-blue-700 py-20 w-full">
+                    <div className="flex flex-col items-center gap-6">
+                        <p className="text-4xl text-center text-white font-bold">Procure pelos seus gêneros favoritos!</p>
+                        <p className="text-xl text-center text-white"> Escolha o filme que mais bem combina com você e aproveite! </p>
                     </div>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-          {/* Modal */}
-          <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={fecharModal}
-            contentLabel="Modal Gênero"
-            className="bg-white p-6 rounded shadow max-w-md mx-auto mt-32"
-            overlayClassName="fixed inset-0 bg-black bg-opacity-50"
-          >
-            <h2 className="text-blue-500 text-xl font-bold mb-4">
-              {editando ? "Editar Gênero" : "Criar Novo Gênero"}
-            </h2>
-            <input
-              value={nomeInput}
-              onChange={(e) => setNomeInput(e.target.value)}
-              placeholder="Nome do gênero"
-              className="w-full border p-2 mb-4 text-black font-md text-lg"
-            />
-            <div className="flex justify-end gap-2">
-              <button
-                onClick={fecharModal}
-                className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-              >
-                Cancelar
-              </button>
-              <button
-                onClick={salvarGenero}
-                className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-              >
-                Salvar
-              </button>
-            </div>
-          </Modal>
-        </div>
-      </div>
-    </main>
-  );
-}
+                </section>
+
+                {/* Menu da pagina generos */}
+
+                <div className="flex flex-col items-center gap-8 border-2 border-white max-w-5/6 md:max-w-2/3 min-w-2/3 bg-blue-800 my-20">
+
+                    <div className="flex justify-center min-w-1/8 border-b-2 border-l-2 border-r-2 border-black text-2xl">
+                        <h2>Menu</h2>
+                    </div>
+
+                    <div className="flex w-full min-h-[300px]">
+                        <div className="bg-white w-4/5 md:w-7/10 border-2 border-black text-black text-2xl font-medium flex flex-col">
+
+                            {/*Exemplo de gêneros*/}
+                            <p>Ação</p>
+                            <p>Ficção</p>
+                            <p>Comédia</p>
+                            <p>Super Herói</p>
+                            <p>Suspense</p>
+                            <p>Terror</p>
+                            <p>Policial</p>
+                            <p>Dorama</p>
+                        </div>
+
+                        <div className="flex justify-center items-center bg-gray-400 border-t-2 border-r-2 border-b-2 border-black w-8">
+                            <p className="text-3xl"><AlignJustify/></p>
+                        </div>
+
+                    </div>
+
+                    <div className="flex justify-around w-full my-8">
+                        <div className="flex gap-8">
+                            <button className="bg-green-400 text-white text-xl font-bold border border-black rounded-xl hover:bg-green-600 transition duration-400 py-2 px-4">
+                                Criar gênero
+                            </button>
+
+                            <button className="bg-green-400 text-white text-xl font-bold border border-black rounded-xl hover:bg-green-600 transition duration-400 py-2 px-4">
+                                Listar Todos 
+                            </button>
+                        </div>
+
+                        {/*Botões de editar e remover do desktop*/}
+
+                        <div className="hidden md:flex gap-8">
+                            <button className="bg-amber-400 text-white text-xl font-bold border border-black rounded-xl hover:bg-amber-500 transition duration-400 py-2 px-4">
+                                Editar
+                            </button>
+
+                            <button className="bg-red-600 text-white text-xl font-bold border border-black rounded-xl hover:bg-red-800 transition duration-400 py-2 px-4">
+                                Deletar
+                            </button>
+                        </div>
+
+
