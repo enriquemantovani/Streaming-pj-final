@@ -24,7 +24,6 @@ export default function Header(){
                 <Link href="/" className="hover:text-cyan-300 transition">Início</Link>
                 <Link href="/series" className="hover:text-cyan-300 transition">Séries</Link>
                 <Link href="/generos" className="hover:text-cyan-300 transition">Gêneros</Link>
-                <Link href="/" className="hover:text-cyan-300 transition">Minha Lista</Link>
             </nav>
             <div className="hidden md:flex items-center gap-4">
                 <button className="text-xl hover:text-cyan-300 transition"><Search/></button>
